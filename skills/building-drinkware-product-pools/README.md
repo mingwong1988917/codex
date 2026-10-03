@@ -20,7 +20,14 @@
 请使用 $building-drinkware-product-pools 清洗我提供的杯壶商品数据，并保留原始数据与筛选依据。
 ```
 
-也可以让有仓库读取权限的 Codex 使用 `skill-installer` 安装仓库 `mingwong1988917/codex` 下的 `skills/building-drinkware-product-pools`。
+也可以把以下内容发给对方的 Codex：
+
+```text
+请使用 skill-installer 安装这个 Skill：
+https://github.com/mingwong1988917/codex/tree/main/skills/building-drinkware-product-pools
+```
+
+安装路径为仓库 `mingwong1988917/codex` 下的 `skills/building-drinkware-product-pools`。其他 Agent 可以按其自身的 Skill 安装机制使用这个完整文件夹。
 
 这个 Skill 提供清洗规则，实际执行由 Codex 完成。校验脚本需要 Python 3 和 `openpyxl`，不会自动安装依赖。脚本目前检查指定热销表的行数和嵌入图片数，以及散点表的累计热度占比列；商品归类、价格和热度口径等仍须按 Skill 规则核对。
 
@@ -30,4 +37,4 @@
 
 ## 分享权限
 
-上传时该仓库为私有仓库，链接接收方需要仓库读取权限。没有权限时，可以将本文件夹压缩为 ZIP 单独分享。
+本副本用于通过公开链接分享。仓库公开后，接收方无需 GitHub 账号或协作者授权即可读取和下载安装文件。如果接收方打开链接显示 404，请先检查仓库是否已设置为 Public；本说明不能代替实际仓库可见性设置。
