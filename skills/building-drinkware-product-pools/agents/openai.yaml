@@ -1,0 +1,4 @@
+interface:
+  display_name: "杯壶产品池采集与清洗"
+  short_description: "统一完成天猫杯壶产品池拆分、清洗、热销图池构建与交付验收"
+  default_prompt: "Use $building-drinkware-product-pools to clean a Tmall drinkware export into a validated mother-and-spec product pool."
